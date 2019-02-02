@@ -9,39 +9,318 @@
 <body>
 
 <h1>
-    <img src=musicnotes.png width="120" height="90" alt="HTML Dog"> &nbsp
     Classical Music Generator &nbsp
-    <img src=musicnotes.png width="120" height="90" alt="HTML Dog"> &nbsp
+    <img src=music_note.jpg width="180" height="90" alt="music note picture" class="translate"> &nbsp
 </h1>
 
-<p>Please select the composer you would like your beat to sound like</p>
-<select action="/action_page.php">
-    <option selected value="Albeniz">Albeniz</option>
-    <option value="Bach">Bach</option>
-    <option value="Balakriew">Balakriew</option>
-    <option value="Beethoven">Beethoven</option>
-    <option value="Borodin">Borodin</option>
-    <option value="Brahams">Brahams</option>
-    <option value="Burgmueller">Burgmueller</option>
-    <option value="Chopin">Chopin</option>
-    <option value="Clementi">Clementi</option>
-    <option value="Debussy">Debussy</option>
-    <option value="Godowsky">Godowsky</option>
-    <option value="Grandos">Grandos</option>
-    <option value="Grieg">Grieg</option>
-    <option value="Haydn">Haydn</option>
-    <option value="Liszt">Liszt</option>
-    <option value="Mendelssohn">Mendelssohn</option>
-    <option value="Moszkowski">Moszkowski</option>
-    <option value="Mozart">Mozart</option>
-    <option value="Mussorgsky">Mussorgsky</option>
-    <option value="Rachmaniov">Rachmaninov</option>
-    <option value="Ravel">Ravel</option>
-    <option value="Schubert">Schubert</option>
-    <option value="Schumann">Schumann</option>
-    <option value="Sinding">Sinding</option>
-    <option value="Tchaikovsky">Tchaikovsky</option>
-</select>
+
+<h2> <strong> Please select the composer you would like your composition to sound like </strong></h2>
+
+<label for="composer-name">
+    Composer Name
+</label>
+<form  onsubmit="selectComposer()">
+    <select id = "composer-name" name = "composer-name">
+        <option value="Albeniz">Albeniz</option>
+        <option value="Bach">Bach</option>
+        <option value="Balakriew">Balakriew</option>
+        <option value="Beethoven">Beethoven</option>
+        <option value="Borodin">Borodin</option>
+        <option value="Brahams">Brahams</option>
+        <option value="Burgmueller">Burgmueller</option>
+        <option value="Chopin">Chopin</option>
+        <option value="Clementi">Clementi</option>
+        <option value="Debussy">Debussy</option>
+        <option value="Godowsky">Godowsky</option>
+        <option value="Granados">Granados</option>
+        <option value="Grieg">Grieg</option>
+        <option value="Haydn">Haydn</option>
+        <option value="Liszt">Liszt</option>
+        <option value="Mendelssohn">Mendelssohn</option>
+        <option value="Moszkowski">Moszkowski</option>
+        <option value="Mozart">Mozart</option>
+        <option value="Mussorgsky">Mussorgsky</option>
+        <option value="Rachmaniov">Rachmaninov</option>
+        <option value="Ravel">Ravel</option>
+        <option value="Schubert">Schubert</option>
+        <option value="Schumann">Schumann</option>
+        <option value="Sinding">Sinding</option>
+        <option value="Tchaikovsky">Tchaikovsky</option>
+    </select>
+
+
+    <button id="composerButton" type="submit">Make Music!</button>
+</form>
+
+<script src="select_composer.js" type="text/javascript"></script>
+
+<table align="center">
+    <tr>
+        <td>
+            <p><b>Issac Albeniz</b></p>
+            <br>
+            <img src="Albeniz_pic.jpg" width="240" height="225">
+            <br>
+            <strong>1860 – 1909</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Albeniz:</p>
+            <a href="https://en.wikipedia.org/wiki/Isaac_Alb%C3%A9niz">Learn more about Albeniz</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=ShXNe4kc6M8">Listen to Albeniz!</a>
+        </td>
+
+        <td>
+            <p><b>Johann Sebastian Bach</b></p>
+            <br>
+            <img src="bach_pic.jpg" width="240" height="225">
+            <br>
+            <strong>1685 - 1750</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Bach:</p>
+            <a href="https://en.wikipedia.org/wiki/Johann_Sebastian_Bach">Learn more about Bach</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=cwzI6dnJygs">Listen to Bach!</a>
+        </td>
+
+        <td>
+            <p><b>Mily Balakirev</b></p>
+            <br>
+            <img src="Balakirev.jpg" width="240" height="225">
+            <br>
+            <strong>1837 - 1910</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Balakirev:</p>
+            <a href="https://en.wikipedia.org/wiki/Mily_Balakirev">Learn more about Balakirev</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=Em2ffoAKnRU">Listen to Balakirev!</a>
+        </td>
+        <td>
+            <p><b>Ludwig van Beethoven</b></p>
+            <br>
+            <img src="beethoven.jpg" width="240" height="225">
+            <br>
+            <strong>1770 – 1820</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Beethoven:</p>
+            <a href="https://en.wikipedia.org/wiki/Ludwig_van_Beethoven">Learn more about Beethoven</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=W-fFHeTX70Q">Listen to Beethoven!</a>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+            <br>
+            <br>
+            <p><b>Alexander Borodin</b></p>
+            <br>
+            <img src="Borodin.jpg" width="240" height="225">
+            <br>
+            <strong>1833 – 1887</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Borodin:</p>
+            <a href="https://en.wikipedia.org/wiki/Alexander_Borodin">Learn more about Borodin</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=c9SSQOkMypU">Listen to Borodin!</a>
+        </td>
+
+        <td>
+            <br>
+            <br>
+            <p><b>Johannes Brahms</b></p>
+            <br>
+            <img src="brahms.jpg" width="240" height="225">
+            <br>
+            <strong>1833 - 1898</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Brahms:</p>
+            <a href="https://en.wikipedia.org/wiki/Johannes_Brahms">Learn more about Brahms</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=zKrxesI3ziE">Listen to Brahms!</a>
+        </td>
+
+        <td>
+            <br>
+            <br>
+            <p><b>Johann Friedrich Franz Burgmüller</b></p>
+            <br>
+            <img src="burgmueller.jpg" width="240" height="225">
+            <br>
+            <strong>1806 - 1874</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Burgmüller:</p>
+            <a href="https://en.wikipedia.org/wiki/Johann_Friedrich_Franz_Burgm%C3%BCller">Learn more about Burgmüller</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=0NRE8fupShU">Listen to Burgmüller!</a>
+        </td>
+        <td>
+            <br>
+            <br>
+            <p><b>Frédéric Chopin</b></p>
+            <br>
+            <img src="chopin.jpg" width="240" height="225">
+            <br>
+            <strong>1810 – 1849</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Chopin:</p>
+            <a href="https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin">Learn more about Chopin</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=wygy721nzRc">Listen to Chopin!</a>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+            <br>
+            <br>
+            <p><b>Muzio Clementi</b></p>
+            <br>
+            <img src="Clementi.jpg" width="240" height="225">
+            <br>
+            <strong>1752 – 1832</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Clementi:</p>
+            <a href="https://en.wikipedia.org/wiki/Muzio_Clementi">Learn more about Clementi</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=3qq-1gCiB7">Listen to Clementi!</a>
+        </td>
+
+        <td>
+            <br>
+            <br>
+            <p><b>Claude Debussy</b></p>
+            <br>
+            <img src="debussy.jpg" width="240" height="225">
+            <br>
+            <strong>1862 - 1918</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Dubussy:</p>
+            <a href="https://en.wikipedia.org/wiki/Claude_Debussy">Learn more about Dubussy</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=OUx6ZY60uiI">Listen to Dubussy!</a>
+        </td>
+
+        <td>
+            <br>
+            <br>
+            <p><b>Leopold Godowsky</b></p>
+            <br>
+            <img src="Godowsky.jpg" width="240" height="225">
+            <br>
+            <strong>1870 - 1938</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Godowsky:</p>
+            <a href="https://en.wikipedia.org/wiki/Leopold_Godowsky">Learn more about Godowsky</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=f0nlJXooIVc">Listen to Godowsky!</a>
+        </td>
+        <td>
+            <br>
+            <br>
+            <p><b>Enrique Granados</b></p>
+            <br>
+            <img src="granados.jpg" width="240" height="225">
+            <br>
+            <strong>1867 – 1916</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Granados:</p>
+            <a href="https://en.wikipedia.org/wiki/Enrique_Granados">Learn more about Granados</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=gmu8OfcF8-Q">Listen to Granados!</a>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+            <br>
+            <br>
+            <p><b>Muzio Clementi</b></p>
+            <br>
+            <img src="Clementi.jpg" width="240" height="225">
+            <br>
+            <strong>1752 – 1832</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Clementi:</p>
+            <a href="https://en.wikipedia.org/wiki/Muzio_Clementi">Learn more about Clementi</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=3qq-1gCiB7">Listen to Clementi!</a>
+        </td>
+
+        <td>
+            <br>
+            <br>
+            <p><b>Claude Debussy</b></p>
+            <br>
+            <img src="debussy.jpg" width="240" height="225">
+            <br>
+            <strong>1862 - 1918</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Dubussy:</p>
+            <a href="https://en.wikipedia.org/wiki/Claude_Debussy">Learn more about Dubussy</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=OUx6ZY60uiI">Listen to Dubussy!</a>
+        </td>
+
+        <td>
+            <br>
+            <br>
+            <p><b>Leopold Godowsky</b></p>
+            <br>
+            <img src="Godowsky.jpg" width="240" height="225">
+            <br>
+            <strong>1870 - 1938</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Godowsky:</p>
+            <a href="https://en.wikipedia.org/wiki/Leopold_Godowsky">Learn more about Godowsky</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=f0nlJXooIVc">Listen to Godowsky!</a>
+        </td>
+        <td>
+            <br>
+            <br>
+            <p><b>Enrique Granados</b></p>
+            <br>
+            <img src="granados.jpg" width="240" height="225">
+            <br>
+            <strong>1867 – 1916</strong> <br>
+            <p>Alessia will write a blurb</p>
+            <br>
+            <p>If you want to learn more about Granados:</p>
+            <a href="https://en.wikipedia.org/wiki/Enrique_Granados">Learn more about Granados</a>
+            <p> To listen to his music head on over to youtube: </p>
+            <a href="https://www.youtube.com/watch?v=gmu8OfcF8-Q">Listen to Granados!</a>
+        </td>
+
+    </tr>
+
+</table>
+
+
+<ul>
+    <li><a href="default.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+</ul>
+
 
 
 

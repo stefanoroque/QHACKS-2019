@@ -2,4 +2,39 @@ h1{
     text-transform: uppercase;
     text-color: black;
     position:relative;
+    text-align: center;
+    padding: 40px;
+    z-index: 0;/* set this to something high*/
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.translate{
+    transform: translateY(30px);
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: greenyellow;
 }
