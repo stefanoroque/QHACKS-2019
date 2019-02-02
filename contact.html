@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contact_us.css">
+
+</head>
+<body>
+
+<h1>
+    <img src=musicnotes.png width="120" height="90">
+    Contact Us
+    <img src=musicnotes.png width="120" height="90">
+</h1>
+
+<table>
+    <tr>
+        <td>
+            <h2><strong>Meet The Team</strong></h2>
+                <img src=theTeam.jpg width="600" height="400">
+            <br>
+            <p>Pictured:Victoria Wu, Stefano Roque, JD Anthony, Brittaney Everitt, Alessia Morin, and Ella Stewart</p>
+        </td>
+        <td>
+            <p>
+                We are all third year computer science students at Queen's University who LOVE TO CODE! <br>
+                For a few of us, this was our <em>first</em> Qhacks experience <br>
+                Follow our journey on our github!
+                <a href="https://github.com/stefanoroque/QHACKS-2019">QHACKS-2019</a>
+            </p>
+        </td>
+
+    </tr>
+
+</table>
+
+<script src="comments.js" type="test/javascript"></script>
+
+<form onSubmit="WriteToComments()">
+
+    <h3>Feel free to give us some feedback on what you think of our project</h3>
+
+    <p>Name:</p>
+    <input type="text" name="name" id="name" value="Your name">
+
+    <p>Are you:</p>
+    <p><input type="radio" name="areyou" id="gender" value="male">Male</p>
+    <p><input type="radio" name="areyou" id="gender" value="female">Female</p>
+    <p><input type="radio" name="areyou" id="gender" value="other">Other</p>
+
+    <p>Comments: </p>
+    <textarea type="text" name="comments" rows="5" cols="20" id="comments" value="comments">Write Here!</textarea>
+
+    <br>
+    <input type="submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+h1{
+    text-transform: uppercase;
+    text-color: black;
+    position:relative;
+    text-align: center;
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+form{
+    background-color:lightgoldenrodyellow;
+    padding:20px;
+    border-color:darkblue;
+    border-width:5px;
+    border-style:solid;
+}
