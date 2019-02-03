@@ -34,6 +34,7 @@ for file in glob.glob("music_src/albeniz/*.mid"):
             #
 
 n_vocab = len(set(notes))
+print(n_vocab)
 
 sequence_length = 50
 # get all pitch names
@@ -55,9 +56,6 @@ network_input = numpy.reshape(network_input, (n_patterns, sequence_length, 1))
 network_input = network_input / float(n_vocab)
 network_output = np_utils.to_categorical(network_output)
 
-
-
-
 model = Sequential()
 model.add(LSTM(
     256,
@@ -74,7 +72,7 @@ model.add(Dense(n_vocab))
 model.add(Activation('softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 # Load the weights to each node
-model.load_weights('weights-improvement-37-0.3131-bigger.hdf5')
+model.load_weights('weights-improvement-45-0.2106-bigger.hdf5')
 
 start = numpy.random.randint(0, len(network_input) -1)
 int_to_note = dict((number, note) for number, note in enumerate(pitchnames))
