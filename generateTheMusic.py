@@ -74,7 +74,7 @@ model.add(Dense(n_vocab))
 model.add(Activation('softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 # Load the weights to each node
-model.load_weights('weights-improvement-06-4.5347-bigger.hdf5')
+model.load_weights('weights-improvement-35-0.3519-bigger.hdf5')
 
 start = numpy.random.randint(0, len(network_input) -1)
 int_to_note = dict((number, note) for number, note in enumerate(pitchnames))
