@@ -36,7 +36,7 @@ for file in glob.glob("music_src/albeniz/*.mid"):
 n_vocab = len(set(notes))
 print(n_vocab)
 
-sequence_length = 50
+sequence_length = 150
 # get all pitch names
 pitchnames = sorted(set(item for item in notes))
 # create a dictionary to map pitches to integers
