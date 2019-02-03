@@ -3,6 +3,7 @@ h1{
     text-color: black;
     position:relative;
     text-align: center;
+    padding-top: 60px;
 }
 
 body{
@@ -16,3 +17,50 @@ form{
     border-width:5px;
     border-style:solid;
 }
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+    background-color: lightskyblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.container {
+    margin-top: 50px;
+    margin-left: -200px;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: 5s;
+    transition-: ;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+.translate{
+    transform: translateY(30px);
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: dodgerblue;
+}
+
